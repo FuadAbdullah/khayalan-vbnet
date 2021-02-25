@@ -1,0 +1,784 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F64FB314-2DEF-48D7-A8A8-676FAB900127}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>asgmt_khayalan_re.My.MyApplication</StartupObject>
+    <RootNamespace>asgmt_khayalan_re</RootNamespace>
+    <AssemblyName>asgmt_khayalan_re</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>asgmt_khayalan_re.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>asgmt_khayalan_re.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>khayalan.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AAE53CE068874142AD717D0393D66F41F597F5D6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>asgmt_khayalan_re_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL" />
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock, Version=1.11.5.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel, Version=1.11.5.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar, Version=1.11.5.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="customerprofile.Designer.vb">
+      <DependentUpon>customerprofile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="customerprofile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerregister.Designer.vb">
+      <DependentUpon>customerregister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="customerregister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drinkselection.Designer.vb">
+      <DependentUpon>drinkselection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="drinkselection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kcdbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kcdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kcdbDataSet.vb">
+      <DependentUpon>kcdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="customerselection.Designer.vb">
+      <DependentUpon>customerselection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="customerselection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foodselection.Designer.vb">
+      <DependentUpon>foodselection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="foodselection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paymentorder.Designer.vb">
+      <DependentUpon>paymentorder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="paymentorder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receiptorder.Designer.vb">
+      <DependentUpon>receiptorder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="receiptorder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sidesselection.Designer.vb">
+      <DependentUpon>sidesselection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sidesselection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splashscreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splashscreen.Designer.vb">
+      <DependentUpon>splashscreen.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="stafflogin.Designer.vb">
+      <DependentUpon>stafflogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stafflogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffmenu.Designer.vb">
+      <DependentUpon>staffmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="staffmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="summaryorder.Designer.vb">
+      <DependentUpon>summaryorder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="summaryorder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="customerprofile.resx">
+      <DependentUpon>customerprofile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerregister.resx">
+      <DependentUpon>customerregister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerselection.resx">
+      <DependentUpon>customerselection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foodselection.resx">
+      <DependentUpon>foodselection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="drinkselection.resx">
+      <DependentUpon>drinkselection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paymentorder.resx">
+      <DependentUpon>paymentorder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receiptorder.resx">
+      <DependentUpon>receiptorder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sidesselection.resx">
+      <DependentUpon>sidesselection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splashscreen.resx">
+      <DependentUpon>splashscreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stafflogin.resx">
+      <DependentUpon>stafflogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffmenu.resx">
+      <DependentUpon>staffmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="summaryorder.resx">
+      <DependentUpon>summaryorder.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="asgmt_khayalan_re_TemporaryKey.pfx" />
+    <None Include="kcdbDataSet.xsc">
+      <DependentUpon>kcdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kcdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kcdbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kcdbDataSet.xss">
+      <DependentUpon>kcdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat-bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-mark-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-mark-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-mark-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-mark-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-mark-on-cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closed-mail-envelope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\counterclockwide-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cyclist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawing-palette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-profile-coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ellipsis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ellipsis-coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty-checkbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty-label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favourite-star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favourite-star-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\film-frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear-coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-face-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hard-disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-and-text-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-gallery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Khayalan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loop-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\low-signal-indicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus-circular-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\move-to-next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outgoing-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock-with-a-dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parking-signal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause-button-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\placeholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-and-pause-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-button-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plug-connector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-circular-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile-user-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile-user-coloured.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prohibition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\residential-block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rewind-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right-arrow-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scribble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signal-detection-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speech-bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speech-bubble-with-exclamation-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splashscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\station.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tablet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-lines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turn-right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two-way-arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vertical-dots.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vertical-dots-w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virtual-private-network-vpn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume-level.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning-signal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi-signal-level.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-friend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analog-clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluetooth-signal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase-with-a-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase-with-check-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullseye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cake-with-a-candle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\call-ended.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\call-in-progress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caret-arrow-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-lines-w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-arrow-w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile-user-1-w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information-button-w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-button-w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ico.ico" />
+    <Content Include="khayalan.ico" />
+    <None Include="Resources\caret-arrow-right-w.png" />
+    <None Include="Resources\caret-arrow-left-w.png" />
+    <None Include="Resources\20c.png" />
+    <None Include="Resources\5c.png" />
+    <None Include="Resources\50c.png" />
+    <None Include="Resources\rm50.png" />
+    <None Include="Resources\rm20.png" />
+    <None Include="Resources\rm10.png" />
+    <None Include="Resources\rm5.png" />
+    <None Include="Resources\rm1.png" />
+    <None Include="Resources\rm100.png" />
+    <None Include="Resources\10c.png" />
+    <None Include="Resources\test.png" />
+    <None Include="Resources\xxx-onionrings.jpg" />
+    <None Include="Resources\xxx-frenchfries.jpg" />
+    <None Include="Resources\xxx-curlyfries.jpg" />
+    <None Include="Resources\move-to-next-w.png" />
+    <None Include="Resources\back-arrow-w.png" />
+    <None Include="Resources\yyy-sprite.jpg" />
+    <None Include="Resources\yyy-icedlemontea.jpg" />
+    <None Include="Resources\yyy-cocacola.jpg" />
+    <None Include="Resources\zzz-sprite.jpg" />
+    <None Include="Resources\zzz-icedlemontea.jpg" />
+    <None Include="Resources\zzz-cocacola.jfif" />
+    <None Include="Resources\zzz-filletofish.jpg" />
+    <None Include="Resources\zzz-beefburger.jpg" />
+    <None Include="Resources\chickenburger.jpg" />
+    <None Include="Resources\008-chicken leg.png" />
+    <None Include="Resources\007-chicken bucket.png" />
+    <None Include="Resources\006-pancake.png" />
+    <None Include="Resources\005-cheese burger.png" />
+    <None Include="Resources\004-burrito.png" />
+    <None Include="Resources\003-burger.png" />
+    <None Include="Resources\002-beer.png" />
+    <None Include="Resources\001-bbq.png" />
+    <None Include="Resources\050-waiter.png" />
+    <None Include="Resources\049-waffle.png" />
+    <None Include="Resources\048-take away.png" />
+    <None Include="Resources\047-taco.png" />
+    <None Include="Resources\046-steak.png" />
+    <None Include="Resources\045-spaghetti.png" />
+    <None Include="Resources\044-sausage.png" />
+    <None Include="Resources\043-sandwich.png" />
+    <None Include="Resources\042-ribs.png" />
+    <None Include="Resources\041-popcorn.png" />
+    <None Include="Resources\040-pizza.png" />
+    <None Include="Resources\039-pizza.png" />
+    <None Include="Resources\038-pie.png" />
+    <None Include="Resources\037-pancakes.png" />
+    <None Include="Resources\036-onion rings.png" />
+    <None Include="Resources\035-onigiri.png" />
+    <None Include="Resources\034-nuggets.png" />
+    <None Include="Resources\033-noodles.png" />
+    <None Include="Resources\032-nachos.png" />
+    <None Include="Resources\031-muffin.png" />
+    <None Include="Resources\030-milkshake.png" />
+    <None Include="Resources\029-menu.png" />
+    <None Include="Resources\028-steak.png" />
+    <None Include="Resources\027-kebab.png" />
+    <None Include="Resources\026-ice cream.png" />
+    <None Include="Resources\025-hot dog.png" />
+    <None Include="Resources\024-fried egg.png" />
+    <None Include="Resources\023-fried chicken.png" />
+    <None Include="Resources\022-french fries.png" />
+    <None Include="Resources\021-frappe.png" />
+    <None Include="Resources\020-cutlery.png" />
+    <None Include="Resources\019-food truck.png" />
+    <None Include="Resources\018-fish and chips.png" />
+    <None Include="Resources\017-breakfast.png" />
+    <None Include="Resources\016-doughnut.png" />
+    <None Include="Resources\015-cupcake.png" />
+    <None Include="Resources\014-croissant.png" />
+    <None Include="Resources\013-corndog.png" />
+    <None Include="Resources\012-soda.png" />
+    <None Include="Resources\011-coffee.png" />
+    <None Include="Resources\010-churro.png" />
+    <None Include="Resources\009-chips.png" />
+    <None Include="Resources\add-friend-w.png" />
+    <None Include="Resources\profile-user-w.png" />
+    <None Include="Resources\magnifier-w.png" />
+    <None Include="Resources\caret-arrow-right.png" />
+    <None Include="Resources\caret-arrow-left.png" />
+    <None Include="Resources\caret-arrow-down.png" />
+    <None Include="Resources\image-gallery-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
